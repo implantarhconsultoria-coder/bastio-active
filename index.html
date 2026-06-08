@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Bastio Active: moda fitness feminina premium com performance, conforto e identidade."
+    />
+    <title>BÁSTIO ACTIVE</title>
+    <link rel="icon" href="assets/logo-ba.svg" type="image/svg+xml" />
+    <link rel="preload" href="assets/hero-premium-run.png" as="image" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body data-page="home">
+    <a class="top-promo" href="catalogo.html?categoria=Outlet">
+      <span>DROP DE LANÇAMENTO</span>
+      <span>ATÉ 30% OFF</span>
+      <span>COMPRE PELO WHATSAPP</span>
+    </a>
+    <header class="site-header" data-header></header>
+
+    <main id="top">
+      <section class="hero hero-slider" aria-labelledby="hero-title" data-slider>
+        <article class="hero-slide is-active" data-slide style="--hero-image: url('assets/hero-premium-run.png')">
+          <div class="hero-copy">
+            <p class="campaign-label">Campanha de lançamento</p>
+            <h1 id="hero-title">ELEGÂNCIA EM MOVIMENTO</h1>
+            <p>Peças que unem performance, conforto e identidade.</p>
+            <div class="hero-actions">
+              <a class="button primary" href="#produtos">COMPRAR AGORA</a>
+              <a class="button secondary" href="catalogo.html">VER COLEÇÃO</a>
+            </div>
+          </div>
+        </article>
+        <article class="hero-slide" data-slide style="--hero-image: url('assets/slide-group.png')">
+          <div class="hero-copy">
+            <p class="campaign-label">Promoção de drop</p>
+            <h1>DROP DE LANÇAMENTO</h1>
+            <p>Seleção premium com condições especiais para montar looks completos.</p>
+            <div class="hero-actions">
+              <a class="button primary" href="catalogo.html?categoria=Outlet">VER OFERTAS</a>
+              <a class="button secondary" href="#produtos">ESCOLHER PEÇAS</a>
+            </div>
+          </div>
+        </article>
+        <article class="hero-slide" data-slide style="--hero-image: url('assets/slide-strength.png')">
+          <div class="hero-copy">
+            <p class="campaign-label">Coleção corrida e academia</p>
+            <h1>CORRIDA & ACADEMIA</h1>
+            <p>Leggings, tops, shorts e camadas leves para treinos com presença.</p>
+            <div class="hero-actions">
+              <a class="button primary" href="catalogo.html?categoria=Leggings">COMPRAR AGORA</a>
+              <a class="button secondary" href="catalogo.html?categoria=Corta-Ventos">VER CORTA-VENTOS</a>
+            </div>
+          </div>
+        </article>
+        <div class="slider-dots" data-slider-dots aria-label="Controle do slider"></div>
+      </section>
+
+      <section class="quick-shop" id="produtos" aria-labelledby="quick-shop-title">
+        <div class="quick-shop-head">
+          <div>
+            <p class="section-label">Compre agora</p>
+            <h2 id="quick-shop-title">Vitrine BÁSTIO</h2>
+          </div>
+          <div class="product-tabs" data-product-tabs>
+            <button class="tab-button is-active" type="button" data-product-tab="novidades">NOVIDADES</button>
+            <button class="tab-button" type="button" data-product-tab="destaques">MAIS VENDIDOS</button>
+            <button class="tab-button" type="button" data-product-tab="outlet">OUTLET</button>
+          </div>
+        </div>
+        <div class="product-grid commerce-grid" data-product-grid data-limit="6" data-tab="novidades"></div>
+      </section>
+
+      <section class="campaign-banners" aria-label="Campanhas">
+        <a class="campaign-card" href="catalogo.html?categoria=Leggings" style="--campaign-image: url('assets/product-legging-premium.png')">
+          <span>Lançamento</span>
+          <strong>Leggings com detalhe premium</strong>
+          <small>Comprar agora</small>
+        </a>
+        <a class="campaign-card" href="catalogo.html?categoria=Outlet" style="--campaign-image: url('assets/slide-group.png')">
+          <span>Drop</span>
+          <strong>Até 24% OFF em peças selecionadas</strong>
+          <small>Ver ofertas</small>
+        </a>
+        <a class="campaign-card" href="catalogo.html?categoria=Shorts" style="--campaign-image: url('assets/product-short-bolso.png')">
+          <span>Corrida e academia</span>
+          <strong>Shorts, tops e corta-ventos para performance</strong>
+          <small>Explorar coleção</small>
+        </a>
+      </section>
+
+      <section class="benefits" aria-label="Benefícios">
+        <span>Toque premium</span>
+        <span>Modelagem feminina</span>
+        <span>Pix com desconto</span>
+        <span>Compra pelo WhatsApp</span>
+      </section>
+
+      <section class="collection-intro" id="colecoes" aria-labelledby="colecoes-title">
+        <div>
+          <p class="section-label">Destaques da coleção</p>
+          <h2 id="colecoes-title">Essenciais para treinar, viajar e viver com presença.</h2>
+        </div>
+        <p>
+          Uma curadoria de peças em preto, areia, off-white e champagne, pensada para transitar
+          entre corrida, studio e rotina com elegância.
+        </p>
+      </section>
+
+      <section class="promo-drop" aria-labelledby="promo-title" data-promo-block style="--promo-image: url('assets/slide-group.png')">
+        <div>
+          <p class="section-label">Promoção</p>
+          <h2 id="promo-title" data-promo-title>2 peças com desconto</h2>
+          <p data-promo-text>Monte seu look do drop de lançamento com condição especial via WhatsApp.</p>
+        </div>
+        <a class="button primary" href="catalogo.html?categoria=Outlet" data-promo-link>VER DROP</a>
+      </section>
+
+      <section class="looks-section" id="feminino" aria-labelledby="looks-title">
+        <div class="section-heading">
+          <p class="section-label">Categorias</p>
+          <h2 id="looks-title">Escolha pelo tipo de peça.</h2>
+        </div>
+        <div class="category-grid">
+          <a href="catalogo.html?categoria=Leggings">Leggings</a>
+          <a href="catalogo.html?categoria=Tops">Tops</a>
+          <a href="catalogo.html?categoria=Conjuntos">Conjuntos</a>
+          <a href="catalogo.html?categoria=Shorts">Shorts</a>
+          <a href="catalogo.html?categoria=Macacões">Macacões</a>
+          <a href="catalogo.html?categoria=Corta-Ventos">Corta-Ventos</a>
+        </div>
+      </section>
+
+      <section class="products-section outlet-section" id="outlet" aria-labelledby="outlet-title">
+        <div class="section-heading commerce-heading">
+          <div>
+            <p class="section-label">Promoção</p>
+            <h2 id="outlet-title">Outlet Bástio</h2>
+          </div>
+          <a class="button secondary" href="catalogo.html?categoria=Outlet">VER OUTLET</a>
+        </div>
+        <div class="product-grid outlet-grid" data-product-grid data-limit="3" data-tab="outlet"></div>
+      </section>
+
+      <section class="lifestyle" id="lancamentos" aria-labelledby="lifestyle-title">
+        <div class="lifestyle-copy">
+          <p class="section-label">Campanha lifestyle</p>
+          <h2 id="lifestyle-title">Da primeira corrida ao café depois do treino.</h2>
+          <p>
+            A BÁSTIO ACTIVE nasce para mulheres que buscam movimento sem abrir mão
+            de sofisticação, conforto e identidade visual.
+          </p>
+          <a class="text-link" href="catalogo.html">Conhecer lançamentos</a>
+        </div>
+        <div class="lifestyle-panel" aria-hidden="true">
+          <span>01</span>
+          <strong>Soft performance</strong>
+          <p>tecidos opacos, toque frio e acabamento limpo</p>
+        </div>
+      </section>
+
+      <section class="social-section" id="acessorios" aria-labelledby="social-title">
+        <div>
+          <p class="section-label">Instagram</p>
+          <h2 id="social-title">Looks completos para salvar na pasta de inspiração.</h2>
+        </div>
+        <div class="social-grid" aria-label="Prévia do Instagram">
+          <article><span>Studio</span></article>
+          <article><span>Run</span></article>
+          <article><span>Travel</span></article>
+          <article><span>Daily</span></article>
+        </div>
+      </section>
+
+      <section class="whatsapp" id="promocoes" aria-labelledby="whatsapp-title">
+        <p class="section-label">WhatsApp</p>
+        <h2 id="whatsapp-title">Atendimento para montar seu look BÁSTIO.</h2>
+        <p>Receba novidades, tamanhos disponíveis e condições especiais.</p>
+        <a class="button primary" href="#" data-whatsapp-store>FALAR NO WHATSAPP</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>BÁSTIO ACTIVE</span>
+      <a href="#top">Voltar ao topo</a>
+    </footer>
+
+    <script src="assets/store.js" defer></script>
+    <script src="assets/app.js" defer></script>
+  </body>
+</html>

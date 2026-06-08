@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin | BÁSTIO ACTIVE</title>
+    <link rel="icon" href="assets/logo-ba.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body data-page="admin">
+    <header class="admin-header">
+      <a class="brand" href="index.html">
+        <img src="assets/logo-ba.svg" alt="" width="42" height="42" />
+        <span>BÁSTIO ADMIN</span>
+      </a>
+      <a class="button secondary" href="index.html">Ver loja</a>
+    </header>
+    <main class="admin-shell">
+      <section class="page-hero admin-title">
+        <p class="section-label">Painel administrativo</p>
+        <h1>Configurar loja</h1>
+        <p>Edite WhatsApp, textos, produtos, promoções e imagens. As alterações ficam salvas no navegador.</p>
+      </section>
+
+      <section class="admin-grid">
+        <form class="admin-card" data-settings-form>
+          <h2>Configurações</h2>
+          <label>Nome da loja <input name="storeName" required /></label>
+          <label>WhatsApp <input name="whatsapp" required /></label>
+          <label>Instagram <input name="instagram" /></label>
+          <label>Hero principal <input name="heroPrincipal" /></label>
+          <label>Slide 2 <input name="slideStrength" /></label>
+          <label>Slide 3 <input name="slideGroup" /></label>
+          <label>Slide 4 <input name="slideInspire" /></label>
+          <label>Texto principal <textarea name="heroText" rows="3"></textarea></label>
+          <label>Look Academia <input name="lookAcademia" /></label>
+          <label>Look Corrida <input name="lookCorrida" /></label>
+          <label>Look Lifestyle <input name="lookLifestyle" /></label>
+          <label>Look Recuperação <input name="lookRecuperacao" /></label>
+          <button class="button primary" type="submit">Salvar configurações</button>
+        </form>
+
+        <form class="admin-card" data-promo-form>
+          <h2>Promoções</h2>
+          <label>Banner <input name="banner" /></label>
+          <label>Texto <textarea name="text" rows="3"></textarea></label>
+          <label>Link <input name="link" /></label>
+          <label>Imagem <input name="image" /></label>
+          <button class="button primary" type="submit">Salvar promoção</button>
+        </form>
+      </section>
+
+      <section class="admin-card">
+        <div class="admin-card-head">
+          <h2>Produtos</h2>
+          <button class="button secondary" type="button" data-new-product>Novo produto</button>
+        </div>
+        <form class="product-admin-form" data-product-form>
+          <input type="hidden" name="id" />
+          <label>Nome <input name="name" required /></label>
+          <label>Descrição <textarea name="description" rows="3" required></textarea></label>
+          <label>Preço <input name="price" type="number" step="0.01" required /></label>
+          <label>Promoção <input name="salePrice" type="number" step="0.01" /></label>
+          <label>Categoria <input name="category" placeholder="Leggings, Tops, Conjuntos..." required /></label>
+          <label>Tags <input name="tags" placeholder="novidades, destaques, outlet" /></label>
+          <label>Parcelamento <input name="installments" type="number" min="1" max="12" value="6" /></label>
+          <label>Imagem principal <input name="mainImage" required /></label>
+          <label>Galeria <input name="gallery" placeholder="imagem1.png, imagem2.png" /></label>
+          <label>Tamanhos <input name="sizes" placeholder="PP, P, M, G" required /></label>
+          <label>Cores <input name="colors" placeholder="Preto, Areia" required /></label>
+          <label class="check-label"><input name="active" type="checkbox" /> Produto ativo</label>
+          <button class="button primary" type="submit">Salvar produto</button>
+        </form>
+        <div class="admin-list" data-admin-products></div>
+      </section>
+
+      <section class="admin-card">
+        <h2>Imagens</h2>
+        <p>
+          Use caminhos dentro de <code>assets/</code>, por exemplo
+          <code>hero-premium-run.png</code>, <code>slide-strength.png</code> ou uma URL externa.
+        </p>
+        <button class="button secondary" type="button" data-reset-store>Restaurar dados padrão</button>
+      </section>
+    </main>
+    <script src="assets/store.js" defer></script>
+    <script src="assets/admin.js" defer></script>
+  </body>
+</html>
