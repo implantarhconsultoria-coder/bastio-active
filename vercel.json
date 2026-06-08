@@ -1,7 +1,32 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/catalogo.html",
+      "destination": "/catalogo.html"
+    },
+    {
+      "source": "/produto.html",
+      "destination": "/produto.html"
+    },
+    {
+      "source": "/admin.html",
+      "destination": "/admin.html"
+    },
+    {
+      "source": "/politica.html",
+      "destination": "/politica.html"
+    },
+    {
+      "source": "/trocas.html",
+      "destination": "/trocas.html"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",

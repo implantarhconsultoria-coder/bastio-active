@@ -7,7 +7,8 @@
     "start": "node server.js",
     "dev": "node server.js",
     "build": "node build-static.js",
-    "check": "node --check server.js && node --check build-static.js && node --check assets/store.js && node --check assets/app.js && node --check assets/admin.js"
+    "vercel:prebuild": "node build-vercel-output.js",
+    "check": "node --check server.js && node --check build-static.js && node --check build-vercel-output.js && node --check assets/store.js && node --check assets/app.js && node --check assets/admin.js"
   },
   "engines": {
     "node": ">=18"

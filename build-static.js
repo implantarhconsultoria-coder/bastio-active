@@ -3,7 +3,7 @@ const path = require("path");
 
 const root = __dirname;
 const out = path.join(root, "dist");
-const files = ["index.html", "catalogo.html", "produto.html", "admin.html"];
+const files = fs.readdirSync(root).filter((file) => file.endsWith(".html"));
 
 function copyRecursive(source, destination) {
   const stat = fs.statSync(source);
